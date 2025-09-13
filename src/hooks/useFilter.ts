@@ -11,7 +11,7 @@ export const useFilter = (list: CountryCard[] | null | undefined) => {
       return list;
     }
 
-    return list.filter(country => country.region == region)
+    return list.filter(country => country.region === region)
 
   }, [list, region])
 
